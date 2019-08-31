@@ -1,6 +1,6 @@
 {
   "settings": {
-    "name": "Sapattivuosi",
+    "name": "Sapattivuosi - Black Sabbath in Finnish",
     "currentPage": "index.html",
     "theme": {
       "name": "mobirise4",
@@ -42,7 +42,7 @@
     "versionFirst": "4.7.6",
     "uniqCompNum": 15,
     "versionPublish": "4.10.8",
-    "favicon": "",
+    "favicon": "@PROJECT_PATH@/assets/images/apple-touch-icon-114x115.png",
     "noImageResize": "",
     "screenshot": "screenshot.png"
   },
