@@ -6,22 +6,22 @@
       "name": "mobirise4",
       "title": "Mobirise 4",
       "styling": {
-        "primaryColor": "#149dcc",
+        "primaryColor": "#0f7699",
         "secondaryColor": "#ff3366",
         "successColor": "#F7ED4A",
         "infoColor": "#82786E",
         "warningColor": "#879A9F",
         "dangerColor": "#B1A374",
         "mainFont": "Rubik",
-        "display1Font": "Rubik",
+        "display1Font": "PT Sans Narrow",
         "display1Size": 4.25,
-        "display2Font": "Rubik",
+        "display2Font": "PT Sans Narrow",
         "display2Size": 3,
-        "display5Font": "Rubik",
+        "display5Font": "PT Sans Narrow",
         "display5Size": 1.5,
-        "display7Font": "Rubik",
+        "display7Font": "PT Sans Narrow",
         "display7Size": 1,
-        "display4Font": "Rubik",
+        "display4Font": "PT Sans Narrow",
         "display4Size": 1,
         "isRoundedButtons": true,
         "isAnimatedOnScroll": false,
@@ -32,7 +32,13 @@
       ]
     },
     "path": "@PROJECT_PATH@",
-    "siteFonts": [],
+    "siteFonts": [
+      {
+        "css": "'PT Sans Narrow', sans-serif",
+        "name": "PT Sans Narrow",
+        "url": "https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700"
+      }
+    ],
     "versionFirst": "4.7.6",
     "uniqCompNum": 12,
     "versionPublish": "4.10.8",
