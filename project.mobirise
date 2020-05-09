@@ -61,7 +61,7 @@
           "_styles": {
             ".navbar": {
               "padding": ".5rem 0",
-              "background": "@menuBgColor",
+              "background": "black",
               "transition": "none",
               "min-height": "77px"
             },
