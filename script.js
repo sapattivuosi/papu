@@ -5,7 +5,7 @@ function loadNavBar() {
   <span class="site-title">Helsingin Psykoterapia</span>
   
     <div class="topnav" id="myTopnav">
-      <a href="/" class="nav-link">Etusivu</a>
+      <a href="index.html" class="nav-link">Etusivu</a>
       <a href="mina.html" class="nav-link">Minä</a>
       <a href="psykoterapia.html" class="nav-link">Psykoterapia</a>
       <a href="tyonohjaus.html" class="nav-link">Työnohjaus</a>
@@ -16,7 +16,7 @@ function loadNavBar() {
 <!-- Select dropdown for small screens -->
 <div class="select-container">
 <select class="topnav-select" id="topnavSelect" onchange="navigateToPage(this)">
-    <option value="/">Etusivu</option>
+    <option value="index.html">Etusivu</option>
     <option value="mina.html">Minä</option>
     <option value="psykoterapia.html">Psykoterapia</option>
     <option value="tyonohjaus.html">Työnohjaus</option>
