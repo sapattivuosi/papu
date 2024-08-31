@@ -1,0 +1,202 @@
+<!-- styles.css -->
+* {
+    # box-sizing: border-box;
+    margin: 0 auto;
+    padding: 3 px;
+}
+
+body {
+    font-family: Open sans, sans-serif;
+    line-height: 1.6;
+    color: #646262;
+    font-size: 14px; 
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.main-content {
+	margin: 2px;	
+}
+
+.highlight, header .current a {
+    color: #646262;
+    font-weight: bold;
+}
+
+a, a:link, a:visited {
+	color: #0f0f0f
+}
+
+.site-title {
+	display:inline
+	font-weight: normal;
+	font-family: "Raleway";
+	line-height: 1.4em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 43px;
+	text-align: center;
+	display: block;
+    margin:0 auto 28px
+}
+
+.main-image {
+	display: block;
+	object-fit: cover;
+	width: 70%;
+	height: 70%;
+	object-position: 50% 50%;
+	vertical-align: middle;
+	align: center;
+}
+
+
+.html-content {
+	margin: 0 0 28px;
+    word-wrap: break-word;
+	padding: 40px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #f0dddd;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+/* Navigation */
+
+.topnav {
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+
+  overflow: hidden;
+  background-color: #fff;
+  border-color: rgba(219,219,219,.9);
+  width: auto;
+  border-top: 1px solid rgba(219,219,219,.9);
+  border-bottom: 1px solid rgba(219,219,219,.9);
+}
+
+.topnav a {
+  float: left;
+  display: flex;
+  color: #646262;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.topnav a:hover {
+  color: rgba(195,177,177,.8);
+}
+
+.topnav a.active {
+  color: rgba(195,177,177,.8);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.two-column-container {
+    display: flex; /* Use Flexbox to create the two-column layout */
+    gap: 20px; /* Space between the columns */
+    padding: 10px;
+}
+
+.column {
+    flex: 1; /* Each column takes up equal space */
+    padding: 20px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.left-column {
+    /* You can add specific styles for the left column here if needed */
+}
+
+.right-column {
+    /* You can add specific styles for the right column here if needed */
+}
+
+/* Style for the select box */
+.topnav-select {
+    display: none; /* Make select visible */
+    padding: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    text-transform: uppercase;
+    color: rgba(195, 177, 177, 0.8);
+    margin: 0 auto; /* Centering */
+    width: 70%; /* Set width to 50% of the container */
+    max-width: 300px; /* Optional: Limit max width */
+    border: solid 1px #ccc;
+    background-color: #fff; /* Set background to make select visible */
+    border-radius: 4px; /* Optional: Add some border radius */
+    outline: none;
+    appearance: none; /* Remove default arrow */
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6"><path fill="black" d="M0 0l5 6 5-6H0z"/></svg>'); /* Downward pointing arrow */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+/* Container for the select box */
+.select-container {
+    position: relative;
+    width: 100%;
+    text-align: center; /* Center content within container */
+}
+@media screen and (max-width: 640px) {
+   .topnav {
+        display: none; /* Hide navbar on small screens */
+    }
+
+    .topnav-select {
+        display: block; /* Show select box on small screens */
+    }
+
+	.select-container {
+		display: inline-block;
+}
+
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .two-column-container {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+}
+
+@media screen and (max-width: 640px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .two-column-container {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+  }
+}
