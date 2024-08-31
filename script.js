@@ -5,7 +5,7 @@ function loadNavBar() {
   <span class="site-title">Helsingin Psykoterapia</span>
   
     <div class="topnav" id="myTopnav">
-      <a href="index.html" class="nav-link">ETUSIVU</a>
+      <a href="index.html" class="nav-link">Etusivu</a>
       <a href="mina.html" class="nav-link">Minä</a>
       <a href="psykoterapia.html" class="nav-link">Psykoterapia</a>
       <a href="tyonohjaus.html" class="nav-link">Työnohjaus</a>
@@ -49,8 +49,11 @@ function navigateToPage(select) {
 
 // Function to set the current page in the dropdown
 function setSelectedOption() {
-	// Get the current URL path
-	const currentPath = window.location.pathname.replace(/^\//, "");
+	// Get the current URL path without leading slash and split by '/'
+    const currentPath = window.location.pathname.replace(/^\//, "").split('/');
+
+    // Get the last part of the path (actual page)
+    var currentPage = currentPath[1]; // Get the current page
 
 	// Get all nav links
 	const navLinks = document.querySelectorAll('.nav-link');
@@ -61,15 +64,12 @@ function setSelectedOption() {
 		// Strip leading slashes for comparison
 		const linkPath = link.getAttribute('href').replace(/^\//, "");
 		// Compare link path with the current path
-		if (currentPath === linkPath) {
+		if (currentPage === linkPath) {
 			link.classList.add("active"); // Adds the 'active' class to highlight 
 		}
 	});
 
     const select = document.getElementById('topnavSelect');
-    var currentPage = window.location.pathname; // Get the current path
-     // Strip the leading / from currentPage
-    currentPage = currentPage.substring(1);
 
 
     const options = select.options;
