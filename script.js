@@ -5,7 +5,7 @@ function loadNavBar() {
   <span class="site-title">Helsingin Psykoterapia</span>
   
     <div class="topnav" id="myTopnav">
-      <a href="index.html" class="nav-link">Etusivu</a>
+      <a href="index.html" class="nav-link">ETUSIVU</a>
       <a href="mina.html" class="nav-link">Minä</a>
       <a href="psykoterapia.html" class="nav-link">Psykoterapia</a>
       <a href="tyonohjaus.html" class="nav-link">Työnohjaus</a>
